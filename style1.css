@@ -1,0 +1,133 @@
+
+:root{   
+    --color-primary: rgba(50,120,70,0.7);
+    --color-primary-dark: rgb(30, 58, 3);
+    --color-secondary: rgb(60,60,190);
+    --color-error:  rgb(210,40,40); 
+    --color-success: rgba(230,209,25,0.835);
+    --border-radius: 5px;
+
+    --bg-color-primary: rgba(16, 212, 16, 0.3);
+    --bg-color-primary: rgba(1, 82, 1, 0.6);
+    
+
+    --regular-font-size:20px;
+    --mobile-font-size:15px;
+
+    -o-transition-time: 0.3s;
+
+    --box-shadow: 0 0  30px rgb(152, 35, 141);
+    --input-padding: 0.7rem;
+
+    --input-regular-border:2px solid #ddd;
+
+}
+
+
+
+body {
+
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary)), url(manzara1.jpeg);
+
+background-attachment: fixed;
+background-size: cover;
+height: 100vh;
+margin: 0%;
+position: relative;
+font-size: 20px;
+}
+
+
+.container{
+    background-color: rgb(224, 209, 209);
+    width: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+
+  .form__title {
+    text-align: center;
+    margin-bottom: 1rem;
+
+  }
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message-error{
+    color: var(--color-error);
+}
+
+.form__input{
+    width: 100%;
+    padding: var(--input-padding);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline: none;
+    background-color: #ddd;
+    border: var(--input-regular-border);
+    transition: background .3s, border-color .3s;
+}
+
+.form__input:focus{
+    border-color: var(--color-primary);
+    background-color: #ddd;
+}
+
+.form__message-form-message {
+    margin-top: .5rem;
+    font-size: .85rem;
+    color: var(--color-error);
+}
+
+
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #ddd;
+    background-color: var(--bg-color-primary); 
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    font-size: 1.1rem
+}
+
+.form__button:hover{ 
+    background-color: var(--color-primary-dark);
+
+}
+.form__button:active{
+    transform: scale(0,95);
+}
+
+.form__text{
+    text-align: center;
+}
+
+.form__link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form > *:last-child{margin: 0;
+}
+
+.form > *:last-child{
+    margin-bottom:0;
+}
+
+
+
+
